@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>ChatBox</title>
+    <script>
+        function pesan() {
+            let message = document.createElement("P");
+            message.innerHTML = String(document.getElementById("teks_Pertama").value);
+            document.getElementById("textBox").appendChild(message);
+        }
+    </script>
+</head>
+<body>
+    <div style="border: 1px solid black;">
+        <section>
+            <div id="textBox">
+                
+            </div>
+            <div>
+                <input id="teks_Pertama" type="text" >
+                <button id="submit" type="button" onclick="pesan()">Kirim</button>
+        </section>
+    </div>
+</body>
+</html>
